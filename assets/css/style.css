@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.header-area{
+    background-color: #deeaf9;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    text-transform: capitalize; 
+}
+
+.nav{
+    display: flex;
+}
+.nav a{
+    margin-left: 30px;
+    font-size: 18px;
+    color: #041a3c;
+    transition: .3s;
+    padding: 10px;
+}
+.nav a:hover{
+    color: #3882f6;
+    background-color: #f9faf8;
+}
+.bannar-area{
+    padding: 60px 0;
+    background-color: #deeaf9;
+}
+.bannar-content{
+    display: flex;
+    align-items: center;
+}
+.bannar-text{
+    width: 40%;
+    padding-right: 30px;
+    text-transform: capitalize;
+}
+.bannar-img{
+   width: 60%;
+}
+.bannar-img img{
+    width: 100%;
+}
+.bannar-text h2{
+    font-weight: 900;
+    font-size: 48px;
+    color: #161715;
+}
+.bannar-text p{
+    font-size: 18px;
+    color: #161715;
+}
+.btn{
+    background-color: #3882f6;
+    padding: 8px 35px;
+    border-radius: 10px;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.services-area{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-title h4{
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    text-align: center;
+    position: relative;
+}
+.section-title h4::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff4500;
+    width: 100px;
+    height: 3px;
+}
+.section-title h4::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3882f6;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+} 
+.single-service{
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 220px;
+}
+.service-content{
+    width: 140px;
+}
+.service-content:first-child{
+    margin-left: 0;
+}
+.service-content:last-child{
+    margin-right: 0;
+}
+.service-content img{
+    border-radius: 20px;
+    width: 140px;
+    border: 3px solid #3882f6;
+}
+.service-content p{
+    text-align: center;
+}
+
+.testomonial-area{
+    background-color: #e5e7eb;
+}
+.testomonial{
+    padding: 90px;
+}
+.testomonial blockquote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    text-transform: capitalize;
+}
+.testomonial h2{
+    text-align: right;
+    text-transform: capitalize;
+    margin-right: 60px;
+}
+.cta-area{
+    background-color: #3882f6;
+    margin: 80px 178px;
+}
+.contact{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 80%;
+   align-items: center;
+   padding: 30px 100px;
+}
+.btn-border {
+    border: 1px solid #f9faf8;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #f9faf8;
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.contact aside{
+    text-transform: capitalize;
+    color: #f9faf8;
+}
+.contact aside h5{
+    font-weight: 700;
+    font-size: 22px;
+}
+.contact aside p{
+    font-size: 16px;
+}
+.footer-area{
+    background-color: #1f2937;
+    margin-top: 50px;
+}
+.footer-area p{
+    text-align: center;
+    padding: 40px 0;
+    color: #f9faf8;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+/* Responsive Area */
+@media screen and (min-width: 400px) and (max-width: 599px){
+    .container{
+        width: 370px;
+   }
+   .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    text-transform: capitalize; 
+}
+    .nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .nav a:hover{
+        color: #3882f6;
+        background-color: #f9faf8;
+    }
+
+    /* Bannar Area */
+    .bannar-area{
+        padding: 50px 0;
+        background-color: #deeaf9;
+    }
+    .bannar-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .bannar-text{
+        width: 100%;
+        text-align: center;
+       margin-bottom: 25px;
+    }
+    .bannar-img{
+       width: 100%;
+    }
+    .bannar-text h2{
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .bannar-text p{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .btn{
+        background-color: #3882f6;
+        padding: 8px 15px;
+        border-radius: 10px;
+        color: #e5e7eb;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    /* Service Area */
+    .section-title h4{
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 700;
+        color: #1f2937;
+        text-align: center;
+        position: relative;
+    }
+    .section-title h4::before{
+        top: 40px;
+        width: 70px;
+        height: 2px;
+    }
+    .section-title h4::after{
+        top: 40px;
+        height: 10px;
+        width: 10px;
+    } 
+    .single-service{
+       
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .service-content{
+        
+    }
+    .service-conten figcaption p{
+        text-align: center;
+    }
+    .service-content img{
+        border-radius: 20px;
+        width: 240px;
+    }
+    /* Testomonial Area */
+    .testomonial{
+        padding: 30px;
+    }
+    .testomonial blockquote{
+        font-size: 18px;
+    }
+    .testomonial h2{
+        margin-right: 30px;
+    }
+
+    /* CTA Area */
+    .cta-area{
+        background-color: #3882f6;
+        margin: 50px 0;
+    }
+    .contact{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       padding: 15px;
+       justify-content: center;
+    }
+    .contact aside{
+        text-align: center;
+    }
+    .btn-border {
+        padding: 5px 20px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .contact aside h5{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .contact aside p{
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    /* Footer Area */
+    .footer-area{
+        margin-top: 30px;
+    }
+    .footer-area p{
+        padding: 25px 0;
+       
+    }
+}
