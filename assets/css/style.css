@@ -281,19 +281,20 @@ a{
     } 
     .single-service{
        
-        display: flex;
         flex-direction: column;
-        
+        padding: 0;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 40px;
     }
     .service-content{
-        
-    }
-    .service-conten figcaption p{
+        margin-bottom: 20px;
+        width:auto;
         text-align: center;
     }
     .service-content img{
         border-radius: 20px;
-        width: 240px;
+      
     }
     /* Testomonial Area */
     .testomonial{
